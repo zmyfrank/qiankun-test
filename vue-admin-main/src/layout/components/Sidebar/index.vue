@@ -33,26 +33,27 @@ export default {
     routes() {
       const routes = this.$router.options.routes;
       console.log(routes);
-      return routes.concat([
-        {
-          path: '/layout/vue-admin-child/dashboard',
-          meta: { title: '子应用的 dashboard', icon: 'dashboard' }
-        },
-        {
-          path: '',
-          meta: { title: '子应用', icon: 'form' },
-          children: [
-            {
-              path: '/layout/vue-admin-child/form/index',
-              meta: { title: '子应用的 form', icon: 'form' }
-            },
-            {
-              path: '/layout/vue-admin-child/example/table',
-              meta: { title: '子应用的 table', icon: 'table' }
-            }
-          ]
-        }
-      ]);
+      return routes;
+      // return routes.concat([
+      //   {
+      //     path: '/layout/vue-admin-child/dashboard',
+      //     meta: { title: '子应用的 dashboard', icon: 'dashboard' }
+      //   },
+      //   {
+      //     path: '',
+      //     meta: { title: '子应用', icon: 'form' },
+      //     children: [
+      //       {
+      //         path: '/layout/vue-admin-child/form/index',
+      //         meta: { title: '子应用的 form', icon: 'form' }
+      //       },
+      //       {
+      //         path: '/layout/vue-admin-child/example/table',
+      //         meta: { title: '子应用的 table', icon: 'table' }
+      //       }
+      //     ]
+      //   }
+      // ]);
     },
     activeMenu() {
       const route = this.$route

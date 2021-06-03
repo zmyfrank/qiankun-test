@@ -14,7 +14,7 @@ import router from './router'
 
 import '@/icons' // icon
 import '@/permission' // permission control
-import { registerMicroApps } from 'qiankun'
+import { registerMicroApps,start } from 'qiankun'
 /**
  * If you don't want to use mock-server
  * you want to use MockJs for mock api
@@ -43,10 +43,12 @@ new Vue({
 })
 
 registerMicroApps([
-  { 
-    name: 'app-vue-admin', 
-    entry: 'http://localhost:9000', 
-    container: '#appContainer', 
-    activeRule: '/layout/vue-admin-child', 
+  {
+    name: 'app-vue-admin',
+    entry: 'http://localhost:9000',
+    container: '#appContainer',
+    activeRule: '/layout/vue-admin-child',
   }
 ])
+
+  // start();

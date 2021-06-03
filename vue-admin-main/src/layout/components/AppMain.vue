@@ -3,7 +3,7 @@
     <transition>
       <router-view :key="key" />
     </transition>
-    <div id="appContainer"></div>
+    <!-- <div id="appContainer"></div> -->
   </section>
 </template>
 
@@ -18,10 +18,10 @@ export default {
     }
   },
   mounted() {
-    if(!window.isQiankunStart){
-      window.isQiankunStart = true;
-      start();
-    }
+    // if(!window.isQiankunStart){
+    //   window.isQiankunStart = true;
+    //   // start();
+    // }
   },
 }
 </script>

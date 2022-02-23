@@ -1,12 +1,13 @@
 <template>
   <div class="about-content">
     <h1>This is about page</h1>
+    SUBAPP2
   </div>
 </template>
 
 <script>
 export default {
-  name: 'About',
+  name: "About",
   setup() {},
 };
 </script>

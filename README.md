@@ -1,9 +1,17 @@
-# qiankun-vue-element-admin
+# qiankun + vue3 三层嵌套测试项目
 
-主子项目都是 vue-element-admin 创建的，路由都是 history 模式，效果如下
+## 项目结构
 
-![](./效果图.gif)
+- sub-app-1 孙项目 1
+- sub-app-2 孙项目 2
+- sub-main-app 子项目
+- main-app 父项目
 
-# 运行
+## 安装方法
 
-分别进入 vue-admin-main 和 vue-admin-child 目录，安装依赖 `npm i` ，然后运行 `npm run dev`即可
+进入到每个项目中，运行 `yarn` 即可安装依赖 ; 运行 `yarn start` 即可启动项目
+
+## 问题
+
+1. 进入到子项目中后，返回主项目，再返回子项目会报错
+2. 进入到子项目中，切换项目会报错
